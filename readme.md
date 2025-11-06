@@ -18,7 +18,7 @@
 
 **Ready to dive in? Read in order:**
 
-1. **[Choose Your Design Style](#-choose-your-design-style)** (4 complete guides available)
+1. **[Choose Your Design Style](#-choose-your-design-style)** (all 15 comprehensive guides available)
 2. **[How Vibe Coding Works](#-how-vibe-coding-works)** (you talk, AI codes)
 3. **[Your 5-Phase Journey](#-your-5-phase-journey)** (week breakdown)
 4. **[Essential Documents](#-essential-documents)** (your toolkit)
@@ -170,11 +170,11 @@ Your job isn't to code—it's to:
 - **[COLLABORATION-STORY-TEMPLATE.md](COLLABORATION-STORY-TEMPLATE.md)** — Guide for AI's reflection page
 
 ### Style Guides
-- **[Style Guides Directory](style-guides/)** — 4 comprehensive guides + research templates
-  - [Neo-Brutalism Guide](style-guides/NEO-BRUTALISM-GUIDE.md) — Raw, honest, anti-corporate
-  - [Material Design Guide](style-guides/MATERIAL-DESIGN-GUIDE.md) — Google's elevated design language
-  - [Swiss Punk/New Wave Guide](style-guides/SWISS-PUNK-GUIDE.md) — Kinetic rebellion
-  - [Nordic Minimalism Guide](style-guides/NORDIC-MINIMALISM-GUIDE.md) — Calm Scandinavian aesthetic
+- **[Style Guides Directory](style-guides/)** — All 15 comprehensive guides complete (300+ pages)
+  - 3 Reactions Against Swiss (Neo-Brutalism, Swiss Punk, Deconstructivist)
+  - 4 Humanized Descendants (Nordic, Humanist, Editorial, ISOTYPE)
+  - 4 Digital Evolutions (Material, Flat, Fluent/Metro, Neo-Swiss)
+  - 4 Systemic Descendants (Corporate, Vignelli, Ulm School, Dutch Rational)
 
 ---
 

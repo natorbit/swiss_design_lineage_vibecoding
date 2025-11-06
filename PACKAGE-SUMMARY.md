@@ -70,49 +70,41 @@
 
 ---
 
-### Style Guides (4 Complete, 11 Templates Available)
+### Style Guides (All 15 Complete — 300+ Pages Total)
 
-**Complete Comprehensive Guides:**
+**Complete Comprehensive Guides Available:**
 
-1. **style-guides/NEO-BRUTALISM-GUIDE.md** (15+ pages)
-   - Raw, honest, anti-corporate web design
-   - Stark black/white, thick borders, system fonts
-   - Pascal Deville, brutalistwebsites.com references
-   - Complete prompt templates
-   - Difficulty: ⭐⭐ Medium
+**Reactions Against Swiss (3 guides):**
+1. **style-guides/NEO-BRUTALISM-GUIDE.md** (15+ pages) — ⭐⭐ Medium
+2. **style-guides/SWISS-PUNK-GUIDE.md** (25+ pages) — ⭐⭐⭐ Advanced
+3. **style-guides/DECONSTRUCTIVIST-GRUNGE-GUIDE.md** (22+ pages) — ⭐⭐⭐ Advanced
 
-2. **style-guides/MATERIAL-DESIGN-GUIDE.md** (25+ pages)
-   - Google's design language with elevation and motion
-   - 8dp grid, Roboto typography, realistic shadows
-   - Comprehensive color system, type scale, component specs
-   - Motion and animation guidelines
-   - Official material.io references
-   - Difficulty: ⭐⭐⭐ Advanced
+**Humanized Descendants (4 guides):**
+4. **style-guides/NORDIC-MINIMALISM-GUIDE.md** (25+ pages) — ⭐⭐ Medium
+5. **style-guides/HUMANIST-MODERNISM-GUIDE.md** (22+ pages) — ⭐⭐ Medium
+6. **style-guides/EDITORIAL-SWISS-GUIDE.md** (20+ pages) — ⭐⭐ Medium
+7. **style-guides/ISOTYPE-GUIDE.md** (20+ pages) — ⭐⭐⭐ Advanced
 
-3. **style-guides/SWISS-PUNK-GUIDE.md** (25+ pages)
-   - Wolfgang Weingart's kinetic rebellion
-   - Layered typography, diagonal compositions
-   - Controlled chaos with underlying logic
-   - Basel School of Design history
-   - "My Way to Typography" references
-   - Difficulty: ⭐⭐⭐ Advanced
+**Digital Evolutions (4 guides):**
+8. **style-guides/MATERIAL-DESIGN-GUIDE.md** (25+ pages) — ⭐⭐⭐ Advanced
+9. **style-guides/FLAT-DESIGN-GUIDE.md** (20+ pages) — ⭐ Accessible
+10. **style-guides/FLUENT-METRO-GUIDE.md** (22+ pages) — ⭐⭐ Medium
+11. **style-guides/NEO-SWISS-GUIDE.md** (20+ pages) — ⭐ Accessible
 
-4. **style-guides/NORDIC-MINIMALISM-GUIDE.md** (25+ pages)
-   - Calm, spacious Scandinavian aesthetic
-   - Warm neutrals, generous whitespace
-   - Humanist typography, natural connection
-   - Kinfolk Magazine, IKEA, Norm Architects references
-   - "Lagom" philosophy explained
-   - Difficulty: ⭐⭐ Medium
+**Systemic Descendants (4 guides):**
+12. **style-guides/CORPORATE-MODERNISM-GUIDE.md** (20+ pages) — ⭐⭐ Medium
+13. **style-guides/VIGNELLI-TRANSIT-GUIDE.md** (20+ pages) — ⭐⭐⭐ Advanced
+14. **style-guides/ULM-SCHOOL-GUIDE.md** (20+ pages) — ⭐⭐⭐ Advanced
+15. **style-guides/DUTCH-RATIONAL-MODERNISM-GUIDE.md** (20+ pages) — ⭐⭐⭐ Advanced
 
 **Style Guides Directory:**
 
-5. **style-guides/README.md**
-   - Index of all 15 style options
-   - Links to complete guides
-   - Research strategy for remaining 11 styles
-   - Templates for independent research
-   - Authoritative source recommendations
+**style-guides/README.md**
+   - Index of all 15 style options organized by category
+   - Links to all comprehensive guides
+   - Quick reference table
+   - Difficulty level explanations
+   - How to use the guides effectively
 
 ---
 
@@ -186,28 +178,28 @@
 
 ### Style Guide Strategy
 
-**4 Comprehensive Guides:** Cover range of difficulties and types
-- Neo-Brutalism (Medium, Reaction)
-- Material Design (Advanced, Digital Evolution)
-- Swiss Punk (Advanced, Reaction)
-- Nordic Minimalism (Medium, Humanized Descendant)
+**All 15 Comprehensive Guides Complete:**
+- 3 Reactions Against Swiss (Neo-Brutalism, Swiss Punk, Deconstructivist/Grunge)
+- 4 Humanized Descendants (Nordic, Humanist, Editorial, ISOTYPE)
+- 4 Digital Evolutions (Material, Flat, Fluent/Metro, Neo-Swiss)
+- 4 Systemic Descendants (Corporate, Vignelli Transit, Ulm School, Dutch Rational)
 
-**11 Templates Available:** Students can research independently using:
-- Existing guides as structure templates
-- Style guides directory research strategies
-- AI collaboration for research synthesis
+**Difficulty Range:**
+- 2 Accessible guides (⭐) — Beginner-friendly
+- 6 Medium guides (⭐⭐) — Intermediate experience
+- 7 Advanced guides (⭐⭐⭐) — Complex systems
 
-**Rationale:** Balance comprehensive resources with student agency and research skills development.
+**Every guide includes:** Historical context, visual characteristics, design prompts, authenticity checklist, and pro tips.
 
 ---
 
 ## 📊 Document Statistics
 
-**Total Pages:** ~200+ pages of comprehensive documentation
+**Total Pages:** ~500+ pages of comprehensive documentation
 
-**Word Count:** ~80,000+ words
+**Word Count:** ~150,000+ words
 
-**Complete Guides:** 11 documents (7 core + 4 style guides + 1 directory)
+**Complete Guides:** 23 documents (7 core + 15 style guides + 1 directory index)
 
 **Review Frameworks:** 3 systematic checklists
 
@@ -229,13 +221,14 @@
 
 - **README.md** — Overview and navigation
 - **ONE-WEEK-PROJECT-GUIDE.md** — Complete rubric and requirements
-- **Style guide options** — 15 styles, 4 comprehensive guides
+- **All 15 comprehensive style guides** — Complete with prompts and checklists
 
 ### Additional Support Available
 
-Students can request:
-- Additional comprehensive style guides (11 styles templated)
-- Clarification on any phase
+Students have access to:
+- All 15 comprehensive style guides (300+ pages)
+- Style guides directory with difficulty levels and quick reference
+- Clarification on any phase via instructor or AI
 - Examples from completed work
 
 ---
