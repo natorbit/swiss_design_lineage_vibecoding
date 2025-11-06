@@ -174,19 +174,15 @@ Pick ONE style from the Swiss Lineage. You'll receive a detailed style guide for
 
 ### Overview
 
-- **Phase 1:** Research & Asset Collection (6 hours / 15%)#### 2. Research Your Style (4-6 hours)
+- **Phase 1:** Research & Asset Collection (1 hour / 10%)
+- **Phase 2:** Context Building (1 hour / 10%)
+- **Phase 3:** Sprint Planning (30 min / 5%)
+- **Phase 4:** Build & Iterate (6 hours / 60%)
+- **Phase 5:** Reflection & Documentation (1.5 hours / 15%)
 
-- **Phase 2:** Context Building (4 hours / 10%)- **History**: When, where, who created it?
+**Total:** ~10 hours over one week (AI-powered workflow)
 
-- **Phase 3:** Sprint Planning (2 hours / 5%)- **Principles**: What are the core design rules?
-
-- **Phase 4:** Build & Iterate (22 hours / 55%)- **Visual Characteristics**: Colors, typography, layout patterns?
-
-- **Phase 5:** Reflection & Documentation (6 hours / 15%)- **Relationship to Swiss**: Descendant or reaction? How?
-
-- **Modern Examples**: Where do you see it today?
-
-**Total:** ~40 hours over 7 days (~6 hours/day)
+**With AI collaboration:** You guide, AI executes. Focus on design judgment, not coding.
 
 **Deliverable:** Create a simple research document (3-5 pages) with:
 
@@ -198,11 +194,9 @@ Pick ONE style from the Swiss Lineage. You'll receive a detailed style guide for
 
 - Color palette + typography choices (1 page)
 
-## Phase 1: Research & Asset Collection (6 hours)- 5-10 example images from research
+## Phase 1: Research & Asset Collection (1 hour)
 
-
-
-### Goal#### 3. Define Your Design System (2-3 hours)
+### Goal
 
 Build a visual reference library and understand your style's context.Based on your research, document:
 
@@ -330,7 +324,7 @@ Review, refine, save as `src/blog/what-is-[style].md`✓ Clean code structure
 
    - Test in browser
 
-## Phase 2: Context Building (4 hours)
+## Phase 2: Context Building (1 hour)
 
 2. **Typography** (1 hour)
 
@@ -472,7 +466,7 @@ Share your research folder with AI:**Step 3: Iterate and Refine (2 hours)**
 
 - How AI helped (or didn't)
 
-## Phase 3: Sprint Planning (2 hours)
+## Phase 3: Sprint Planning (30 min)
 
 #### 3. Take Screenshots (30 minutes)
 
@@ -558,7 +552,7 @@ Read the sprint plan. Ask yourself:- ✅ Lighthouse Performance: 85+ (90+ target
 
 
 
-## Phase 4: Build & Iterate (22 hours)### Design Authenticity (Must Demonstrate)
+## Phase 4: Build & Iterate (6 hours)### Design Authenticity (Must Demonstrate)
 
 
 
@@ -606,7 +600,7 @@ Transform the site through strategic AI collaboration, iterative design reviews,
 
 - White background
 
-### Sprint 1: Foundation (6-8 hours)- Black text, uppercase
+### Sprint 1: Foundation (2 hours)
 
 - Sharp corners (border-radius: 0)
 
@@ -742,7 +736,7 @@ Fix mobile-specific issues.**Deploy to GitHub Pages:**
 
 - Site must be publicly accessible
 
-### Sprint 2: Components (8-10 hours)- All functionality working
+### Sprint 2: Components (2 hours)
 
 - No broken links
 
@@ -892,7 +886,7 @@ Review and fix issues.- Wikipedia (starting point only)
 
 **Your Main Reference:**
 
-### Sprint 3: Content & Polish (6-8 hours)- Keith's Swiss site: `/references/218hosting/`
+### Sprint 3: Content & Polish (2 hours)
 
 - Study the code structure
 
@@ -1080,7 +1074,7 @@ Push to GitHub:- [ ] Performance metrics met
 
 ### AI is Your Assistant, Not Your Replacement
 
-## Phase 5: Reflection & Documentation (6 hours)
+## Phase 5: Reflection & Documentation (1.5 hours)
 
 The AI helps you:
 

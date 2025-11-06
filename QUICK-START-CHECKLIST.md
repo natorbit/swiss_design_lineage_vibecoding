@@ -22,13 +22,13 @@
 - Portfolio narrative (built in X hours)
 - Appreciate the speed of vibe coding
 
-**Total Target:** 40 hours across one week
+**Total Target:** ~10 hours across one week (AI-powered)
 
 ---
 
-## 📅 Day 1: Research & Vision (6 hours)
+## 📅 Day 1: Research & Vision (1 hour)
 
-**Phase 1A: Choose Your Design Style (1 hour)**
+**Phase 1A: Choose Your Design Style (20 min)**
 
 - [ ] Read the 15 style options in ONE-WEEK-PROJECT-GUIDE.md
 - [ ] Pick one that excites you (not just "easy")
@@ -38,6 +38,11 @@
 **My chosen style:** _________________________
 
 **Why I chose it:**
+```
+
+**Phase 1B: Find Visual References (20 min)**
+
+- [ ] Visit museums/sources listed in your style guide
 ```
 (Write 2-3 sentences—you'll need this for collaboration story)
 ```
@@ -63,7 +68,7 @@
 
 ---
 
-**Phase 1C: Generate AI Mockup (2 hours)**
+**Phase 1C: Generate AI Mockup (20 min)**
 
 - [ ] Open VS Code with Copilot
 - [ ] Create new markdown file: `research/mockup-brief.md`
@@ -86,14 +91,14 @@
 
 | Task | Planned | Actual | Difference |
 |------|---------|--------|------------|
-| Choose style | 1h | | |
-| Find references | 3h | | |
-| Generate mockup | 2h | | |
-| **TOTAL** | **6h** | | |
+| Choose style | 20min | | |
+| Find references | 20min | | |
+| Generate mockup | 20min | | |
+| **TOTAL** | **1h** | | |
 
 ---
 
-## 📅 Day 2: Context Building (4 hours)
+## 📅 Day 2: Context Building (1 hour)
 
 **Phase 2A: Extract Reference Site Best Practices (1.5 hours)**
 
@@ -182,7 +187,7 @@ Base this on authentic [STYLE] principles from the references.
 
 ---
 
-## 📅 Day 3: Sprint Planning (2 hours)
+## 📅 Day 3: Sprint Planning (30 min)
 
 **Phase 3A: Break Down the Transformation (1 hour)**
 
@@ -241,7 +246,7 @@ For each sprint:
 
 ---
 
-## 📅 Days 4-6: Build & Iterate (22 hours)
+## 📅 Days 4-6: Build & Iterate (6 hours total)
 
 **CRITICAL:** This is pure vibe coding. You write ZERO code manually.
 
@@ -360,9 +365,9 @@ For each sprint:
 
 ---
 
-## 📅 Day 7: Reflection & Submission (6 hours)
+## 📅 Day 7: Reflection & Submission (1.5 hours)
 
-**Phase 5A: Generate Collaboration Story (2 hours)**
+**Phase 5A: Generate Collaboration Story (30 min)**
 
 - [ ] Open COLLABORATION-STORY-TEMPLATE.md
 - [ ] Copy the master prompt
@@ -383,7 +388,7 @@ For each sprint:
 
 ---
 
-**Phase 5B: Final Quality Assurance (2 hours)**
+**Phase 5B: Final Quality Assurance (30 min)**
 
 - [ ] Run full Lighthouse audit (all pages)
   - [ ] Performance: 90+ ☐
@@ -418,7 +423,7 @@ For each sprint:
 
 ---
 
-**Phase 5C: Documentation & Submission (2 hours)**
+**Phase 5C: Documentation & Submission (30 min)**
 
 - [ ] Update README.md:
   - Project description
@@ -553,7 +558,7 @@ For each sprint:
 ✅ Lighthouse scores are 90+ across the board  
 ✅ You can explain every design decision  
 ✅ Your collaboration story is engaging  
-✅ You completed it in ~40 hours  
+✅ You completed it in ~10 hours (AI-powered!)  
 ✅ You developed design taste and judgment  
 ✅ You understand human-AI collaboration deeply  
 
@@ -562,9 +567,9 @@ For each sprint:
 ## 💡 Final Tips
 
 **Time Management:**
-- Work in focused 2-hour blocks
+- Work in focused 30min-1hour blocks
 - Take breaks between sprints
-- Don't rush design reviews
+- Let AI handle the tedious work
 - Track time honestly
 
 **Design Reviews:**

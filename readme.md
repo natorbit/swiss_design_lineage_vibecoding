@@ -3,7 +3,7 @@
 
 **What You'll Create:** A beautiful, professionally-designed website showcasing a historic design style—built entirely through conversation with AI.
 
-**Time Required:** ~40 hours over one week  
+**Time Required:** ~10 hours total (AI does the heavy lifting)  
 **Code You'll Write:** Zero. This is pure "vibe coding."
 
 ---
@@ -123,35 +123,39 @@ Your job isn't to code—it's to:
 
 ---
 
-## 📅 Your 5-Phase Journey
+## � Your 5-Phase Journey
 
-### Phase 1: Research & Vision (6 hours)
-- Choose your design style
-- Find 10-15 authoritative examples (museums, books, not Pinterest)
-- Generate initial AI mockup
+### Phase 1: Research & Vision (1 hour)
 
-### Phase 2: Context Building (4 hours)
-- AI extracts best practices from reference site
-- Define your design system (colors, typography, spacing)
-- Setup quality gates (AI does this automatically)
+- Read your style guide (20 min)
+- Collect visual references (20 min)
+- Generate initial AI mockup (20 min)
 
-### Phase 3: Sprint Planning (2 hours)
-- AI creates detailed sprint plan
-- Break work into 4-6 manageable chunks
-- Setup project repository
+### Phase 2: Context Building (1 hour)
 
-### Phase 4: Build & Iterate (22 hours)
-- Work through sprints one at a time
-- **Review each section 2-3 times minimum**
-- Take screenshots, share feedback, refine
-- AI codes, you guide and judge
+- AI creates timeline page (20 min)
+- AI builds designer profiles (20 min)
+- Add authentic imagery (20 min)
 
-### Phase 5: Reflection & Polish (6 hours)
-- AI writes collaboration story (breaking 4th wall)
-- Final quality checks (Lighthouse, accessibility)
-- Deploy and submit
+### Phase 3: Sprint Planning (30 min)
 
-**Total: ~40 hours across one week**
+- Break work into 3 sprints (10 min)
+- Define success criteria (10 min)
+- Set up quality gates (10 min)
+
+### Phase 4: Build & Iterate (6 hours)
+
+- Sprint 1: Foundation (2 hours - layout, typography, color)
+- Sprint 2: Components (2 hours - navigation, cards, interactive elements)
+- Sprint 3: Content & Polish (2 hours - all pages complete, responsive)
+
+### Phase 5: Reflection & Polish (1.5 hours)
+
+- AI writes collaboration story page (30 min)
+- Run final quality checks (30 min)
+- Deploy and document (30 min)
+
+**Total: ~10 hours (AI-powered workflow)**
 
 ---
 
