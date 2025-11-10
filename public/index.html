@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Swiss → Flat — Demo</title>
+  <!-- Roboto from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/flat.css">
+  </head>
+  <body>
+    <!-- Inline SVG sprite for cross-origin-free icon usage -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <!-- inlined icons (mirrors public/icons.svg) -->
+      <symbol id="icon-menu" viewBox="0 0 24 24">
+        <path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-external" viewBox="0 0 24 24">
+        <path d="M14 3h7v7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10 14L21 3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-circle" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-grid" viewBox="0 0 24 24">
+        <path d="M3 3h8v8H3zM13 3h8v8h-8zM3 13h8v8H3zM13 13h8v8h-8z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-home" viewBox="0 0 24 24">
+        <path d="M3 11.5L12 4l9 7.5V21a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V11.5z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M21 21l-4.35-4.35" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M4 20c1.5-4 6-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path d="M6 6l12 12M6 18L18 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+        <path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24">
+        <path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-minus" viewBox="0 0 24 24">
+        <path d="M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-star" viewBox="0 0 24 24">
+        <path d="M12 2l2.6 6.6L21 9.2l-5 3.9L17.2 21 12 17.8 6.8 21 8 13.1 3 9.2l6.4-0.6L12 2z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-bell" viewBox="0 0 24 24">
+        <path d="M18 8a6 6 0 0 0-12 0v5l-2 2h16l-2-2V8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-calendar" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="16" rx="2" ry="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 3v4M8 3v4M3 11h18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-camera" viewBox="0 0 24 24">
+        <rect x="3" y="7" width="18" height="13" rx="2" ry="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="12" cy="13.5" r="3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8 7l1.5-3h5L16 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <path d="M3 7h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <div class="container header-grid">
+  <a class="brand" href="#"><span class="accent">Swiss</span> · Flat</a>
+        <nav class="nav">
+          <a href="#">Home</a>
+          <a href="#">Guides</a>
+          <a href="#">Templates</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <h1>Flat redesign of the Swiss site</h1>
+            <p class="lead">Clean, colorful, two-dimensional UI inspired by early-2010s Flat Design and iOS 7.</p>
+            <div class="controls">
+              <a class="btn primary" href="/style-guide.html">Get started</a>
+              <a class="btn outline" href="#examples">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="full-bleed">
+          <div class="container">
+            <div class="hero-blocks">
+              <div class="color-block primary">Primary</div>
+              <div class="color-block success">Success</div>
+              <div class="color-block warning">Warning</div>
+              <div class="color-block danger">Danger</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="examples" class="container grid-section">
+        <h2>Examples</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-head">
+              <svg class="icon icon--24" aria-hidden="true"><use href="/icons.svg#icon-menu"></use></svg>
+              <h3>Grid-based layout</h3>
+            </div>
+            <div class="card-body">
+              <p>Simple, modular cards with 4px radius and flat color accents.</p>
+              <a class="btn small" href="/style-guide.html">View</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <svg class="icon icon--24" aria-hidden="true"><use href="/icons.svg#icon-external"></use></svg>
+              <h3>Iconography</h3>
+            </div>
+            <div class="card-body">
+              <p>Line icons, 2px stroke width, outline style and scalable SVG.</p>
+              <a class="btn small" href="/style-guide.html">View</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <svg class="icon icon--24" aria-hidden="true"><use href="/icons.svg#icon-circle"></use></svg>
+              <h3>Typography</h3>
+            </div>
+            <div class="card-body">
+              <p>Sans-serif system using Roboto with bold headings and relaxed leading.</p>
+              <a class="btn small" href="/style-guide.html">View</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© Swiss · Flat — demo</p>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

@@ -5,10 +5,27 @@ Build a design gallery website using pure AI collaboration. You guide, AI codes.
 
 **⏱️ Time:** ~10 hours  |  **💻 Code you write:** Zero  |  **🎨 What you learn:** Design taste + AI collaboration
 
+
+## Demo (Flat design)
+
+A small demo front-end has been added under `public/` to show the Flat Design refresh.
+
+- Start the server:
+
+```bash
+npm install
+npm start
+```
+
+- Open http://localhost:3000 in your browser to view the demo.
+
+The demo uses the Flat UI color palette, Roboto, 4px radius cards, no shadows, and 2px stroke outline icons.
+
 ---
 
-## → **[START HERE: docs/START-HERE.md](docs/START-HERE.md)** ←
+**Ready?** → **[docs/START-HERE.md](docs/START-HERE.md)**
 
+````
 **New to this project?** Click above. Everything you need is there.
 
 ---

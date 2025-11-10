@@ -1,0 +1,4 @@
+If you want these screenshots to display, copy the files from docs/screenshots/ to public/assets/screenshots/ (preserve filenames) so the server can serve them at /assets/screenshots/.
+Example:
+mkdir -p public/assets/screenshots
+cp docs/screenshots/*.png public/assets/screenshots/

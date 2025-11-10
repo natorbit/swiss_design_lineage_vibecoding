@@ -1,0 +1,28 @@
+{
+  "name": "swiss_design_lineage_vibecoding",
+  "version": "1.0.0",
+  "description": "Build a design gallery website using pure AI collaboration. You guide, AI codes.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natorbit/swiss_design_lineage_vibecoding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/natorbit/swiss_design_lineage_vibecoding/issues"
+  },
+  "homepage": "https://github.com/natorbit/swiss_design_lineage_vibecoding#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

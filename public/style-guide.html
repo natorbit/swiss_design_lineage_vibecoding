@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Style guide and component library for the Flat Design system, showcasing colors, typography, spacing, and interactive elements." />
+    <meta name="theme-color" content="#3498DB" />
+    <title>Style Guide — Flat Design</title>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/flat.css">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Style Guide — Flat Design">
+    <meta property="og:description" content="Component library and design system documentation">
+    <meta property="og:type" content="website">
+    <meta name="color-scheme" content="light">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <!-- Basic Icons -->
+      <symbol id="icon-home" viewBox="0 0 24 24">
+        <path d="M3 12l9-9 9 9M5 10v10h14V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24">
+        <path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+        <path d="M5 20c0-3.5 3-7 7-7s7 3.5 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+      </symbol>
+      <symbol id="icon-bell" viewBox="0 0 24 24">
+        <path d="M12 4v1M21 12h-1M12 19v1M4 12H3M18.4 5.6l-.7.7M18.4 18.4l-.7-.7M6.3 5.6l.7.7M6.3 18.4l.7-.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="2" fill="none"/>
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2" fill="none"/>
+        <path d="M3 5l9 9 9-9M3 19l6-6m12 0l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-star" viewBox="0 0 24 24">
+        <path d="M12 2l3 6 7 1-5 4 2 7-7-4-7 4 2-7-5-4 7-1z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" fill="none"/>
+      </symbol>
+      <symbol id="icon-grid" viewBox="0 0 24 24">
+        <path d="M4 4h4v4H4zM12 4h4v4h-4zM20 4h-4v4h4zM4 12h4v4H4zM12 12h4v4h-4zM20 12h-4v4h4zM4 20h4v-4H4zM12 20h4v-4h-4zM20 20h-4v-4h4z" stroke="currentColor" stroke-width="2" fill="none"/>
+      </symbol>
+      <symbol id="icon-calendar" viewBox="0 0 24 24">
+        <rect x="3" y="4" width="18" height="16" stroke="currentColor" stroke-width="2" fill="none"/>
+        <path d="M3 8h18M8 4V2m8 2V2M7 12h10M7 16h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="M4 12l6 6L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24">
+        <path d="M12 4v16M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="icon-minus" viewBox="0 0 24 24">
+        <path d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+    </svg>
+    <style>
+      .swatches{display:flex;gap:12px;flex-wrap:wrap}
+      .swatch{width:120px;height:80px;border-radius:4px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+      .token{background:white;border:1px solid rgba(0,0,0,0.06);padding:8px;border-radius:4px}
+      .example-box{background:white;border:1px dashed rgba(52,73,94,0.08);padding:16px;border-radius:4px}
+      .kbd{background:#f4f6f7;border-radius:4px;padding:4px 8px;font-weight:700}
+      .tokens{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    </style>
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="container header-grid">
+        <a class="brand" href="/" aria-label="Swiss Flat Design System homepage">
+          <span class="accent">Swiss</span> · Flat
+        </a>
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="/" aria-current="false">Home</a></li>
+            <li><a href="/style-guide.html" aria-current="page">Style Guide</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" role="main">
+      <h1>Style Guide</h1>
+      <p class="lead">Tokens, components and rules for the Flat Design system implemented in this demo.</p>
+
+      <section class="grid-section">
+        <h2>Colors</h2>
+        <div class="swatches">
+          <div class="swatch" style="background:var(--color-primary)">Primary<br><small>#3498DB</small></div>
+          <div class="swatch" style="background:var(--color-success)">Success<br><small>#2ECC71</small></div>
+          <div class="swatch" style="background:var(--color-warning);color:#111">Warning<br><small>#F39C12</small></div>
+          <div class="swatch" style="background:var(--color-danger)">Danger<br><small>#E74C3C</small></div>
+          <div class="swatch" style="background:var(--neutral-900)">Dark<br><small>#34495E</small></div>
+          <div class="swatch" style="background:var(--neutral-100);color:var(--neutral-900);border:1px solid rgba(0,0,0,0.06)">Neutral<br><small>#ECF0F1</small></div>
+        </div>
+      </section>
+
+      <section class="grid-section">
+        <h2>Typography</h2>
+        <div class="example-box">
+          <h1>H1 — Heading Example</h1>
+          <h2>H2 — Section Heading</h2>
+          <h3>H3 — Card Title</h3>
+          <p>Body copy uses Roboto. Spacing scales are <span class="kbd">8px, 16px, 24px, 32px, 48px</span>.</p>
+        </div>
+      </section>
+
+      <section class="grid-section">
+        <h2>Spacing</h2>
+        <div class="tokens">
+          <div class="token">--space-1: 8px</div>
+          <div class="token">--space-2: 16px</div>
+          <div class="token">--space-3: 24px</div>
+          <div class="token">--space-4: 32px</div>
+          <div class="token">--space-5: 48px</div>
+        </div>
+
+        <div class="spacing-samples">
+          <div class="spacing-sample"><div class="label">Padding example: var(--space-1)</div><div class="box" style="padding:var(--space-1)">box</div></div>
+          <div class="spacing-sample"><div class="label">Padding example: var(--space-2)</div><div class="box" style="padding:var(--space-2)">box</div></div>
+          <div class="spacing-sample"><div class="label">Padding example: var(--space-3)</div><div class="box" style="padding:var(--space-3)">box</div></div>
+          <div class="spacing-sample"><div class="label">Padding example: var(--space-4)</div><div class="box" style="padding:var(--space-4)">box</div></div>
+          <div class="spacing-sample"><div class="label">Padding example: var(--space-5)</div><div class="box" style="padding:var(--space-5)">box</div></div>
+        </div>
+      </section>
+
+      <section class="grid-section">
+        <h2>Buttons</h2>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+          <button class="btn primary" type="button" data-action="notify" data-message="Primary demo action" aria-label="Primary action demo">
+            <svg class="icon icon--24" aria-hidden="true" focusable="false"><use href="#icon-search"></use></svg>
+            Primary
+          </button>
+          <button class="btn success" type="button" data-action="notify" data-message="Success demo action" aria-label="Success action demo">
+            <svg class="icon icon--24" aria-hidden="true" focusable="false"><use href="#icon-check"></use></svg>
+            Success
+          </button>
+          <button class="btn danger" type="button" data-action="confirm" data-message="Are you sure you want to trigger the danger action?" aria-label="Danger action demo">
+            <svg class="icon icon--24" aria-hidden="true" focusable="false"><use href="#icon-close"></use></svg>
+            Danger
+          </button>
+          <button class="btn outline" type="button" data-action="notify" data-message="Outline clicked" aria-label="Outline button demo">
+            Outline
+          </button>
+          <button class="btn small primary" type="button" data-action="notify" data-message="Small primary clicked" aria-label="Small primary button demo">
+            Small
+          </button>
+        </div>
+      </section>
+
+      <section class="grid-section">
+        <h2>Cards</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-head">
+              <svg class="icon icon--24"><use href="#icon-grid"></use></svg>
+              <h3>Card title</h3>
+              <div class="meta">Meta</div>
+            </div>
+            <div class="card-body">
+              <p>Card content shows consistent padding and alignment. Use a short title, one-line summary, and a clear action.</p>
+              <div style="display:flex;gap:8px;margin-top:12px"><a class="btn small" href="#" data-action="notify" data-message="Card action">Action</a><a class="btn outline small" href="#" data-action="notify" data-message="Secondary">Secondary</a></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-head">
+              <svg class="icon icon--24"><use href="#icon-user"></use></svg>
+              <h3>Profile</h3>
+              <div class="meta">User</div>
+            </div>
+            <div class="card-body">
+              <p>Cards are rectangular with 4px radius. Keep actions predictable and prominent.</p>
+              <div style="display:flex;gap:8px;margin-top:12px"><a class="btn small primary" href="#" data-action="notify" data-message="View profile">View</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="grid-section">
+        <h2>Grid (12-col)</h2>
+        <div class="grid-demo">
+          <div class="row">
+            <div class="col-3 example-box">col-3</div>
+            <div class="col-6 example-box">col-6</div>
+            <div class="col-3 example-box">col-3</div>
+          </div>
+
+          <div style="height:8px"></div>
+
+          <div class="row">
+            <div class="col-4 example-box">col-4</div>
+            <div class="col-4 example-box">col-4</div>
+            <div class="col-4 example-box">col-4</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-section">
+        <h2>Icons</h2>
+        <p class="lead">Two-dimensional line icons with consistent 2px stroke weight. All icons use <code>stroke=currentColor</code> for dynamic coloring.</p>
+        
+        <!-- Icon Sizes Demo -->
+        <div class="showcase-box">
+          <h3>Icon Sizes</h3>
+          <svg class="icon-illustration" viewBox="0 0 160 160" width="160" height="160">
+            <path d="M80 20v120M20 80h120M60 80a20 20 0 1 0 40 0a20 20 0 1 0 -40 0" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <div class="icon-sizes">
+            <div class="size-demo">
+              <div class="token">
+                <svg class="icon icon--16" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M12 6v12M6 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div class="size-label">16px</div>
+                <div class="size-meta">compact</div>
+              </div>
+            </div>
+            <div class="size-demo">
+              <div class="token">
+                <svg class="icon icon--24" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M12 6v12M6 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div class="size-label">24px</div>
+                <div class="size-meta">default</div>
+              </div>
+            </div>
+            <div class="size-demo">
+              <div class="token">
+                <svg class="icon icon--48" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M12 6v12M6 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div class="size-label">48px</div>
+                <div class="size-meta">large</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Icon Gallery -->
+        <div class="showcase-box">
+          <h3>Icon Set</h3>
+          <div class="icon-gallery">
+            <div class="icon-item">
+              <div class="icon-preview">
+                <svg class="icon icon--32" aria-hidden="true"><use href="#icon-home"></use></svg>
+              </div>
+              <code>home</code>
+            </div>
+            <div class="icon-item">
+              <div class="icon-preview">
+                <svg class="icon icon--32" aria-hidden="true"><use href="#icon-search"></use></svg>
+              </div>
+              <code>search</code>
+            </div>
+            <div class="icon-item">
+              <div class="icon-preview">
+                <svg class="icon icon--32" aria-hidden="true"><use href="#icon-user"></use></svg>
+              </div>
+              <code>user</code>
+            </div>
+            <div class="icon-item">
+              <div class="icon-preview">
+                <svg class="icon icon--32" aria-hidden="true"><use href="#icon-bell"></use></svg>
+              </div>
+              <code>bell</code>
+            </div>
+            <div class="icon-item">
+              <div class="icon-preview">
+                <svg class="icon icon--32" aria-hidden="true"><use href="#icon-mail"></use></svg>
+              </div>
+              <code>mail</code>
+            </div>
+            <div class="icon-item">
+              <div class="icon-preview">
+                <svg class="icon icon--32" aria-hidden="true"><use href="#icon-star"></use></svg>
+              </div>
+              <code>star</code>
+            </div>
+            <div class="icon-item">
+              <div class="icon-preview">
+                <svg class="icon icon--32" aria-hidden="true"><use href="#icon-grid"></use></svg>
+              </div>
+              <code>grid</code>
+            </div>
+            <div class="icon-item">
+              <div class="icon-preview">
+                <svg class="icon icon--32" aria-hidden="true"><use href="#icon-calendar"></use></svg>
+              </div>
+              <code>calendar</code>
+            </div>
+            <div class="icon-item">
+              <div class="icon-preview">
+                <svg class="icon icon--32" aria-hidden="true"><use href="#icon-check"></use></svg>
+              </div>
+              <code>check</code>
+            </div>
+            <div class="icon-item">
+              <div class="icon-preview">
+                <svg class="icon icon--32" aria-hidden="true"><use href="#icon-close"></use></svg>
+              </div>
+              <code>close</code>
+            </div>
+            <div class="icon-item">
+              <div class="icon-preview">
+                <svg class="icon icon--32" aria-hidden="true"><use href="#icon-plus"></use></svg>
+              </div>
+              <code>plus</code>
+            </div>
+            <div class="icon-item">
+              <div class="icon-preview">
+                <svg class="icon icon--32" aria-hidden="true"><use href="#icon-minus"></use></svg>
+              </div>
+              <code>minus</code>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Patterns -->
+        <div class="showcase-box">
+          <h3>Common Patterns</h3>
+          <svg class="patterns-illustration" viewBox="0 0 120 120" width="120" height="120">
+            <path d="M40 40h40M40 60h40M40 80h40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <div class="patterns-grid">
+            <div class="pattern-item">
+              <div class="pattern-preview">
+                <svg class="icon primary icon--32" viewBox="0 0 24 24">
+                  <path d="M4 12l6 6L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+              </div>
+              <div class="pattern-info">
+                <div class="pattern-title">Primary Action</div>
+                <code class="pattern-code">class="icon primary"</code>
+              </div>
+            </div>
+            
+            <div class="pattern-item">
+              <div class="pattern-preview">
+                <svg class="icon success icon--32" viewBox="0 0 24 24">
+                  <path d="M12 4v1M21 12h-1M12 19v1M4 12H3M18.4 5.6l-.7.7M18.4 18.4l-.7-.7M6.3 5.6l.7.7M6.3 18.4l.7-.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+              </div>
+              <div class="pattern-info">
+                <div class="pattern-title">Success State</div>
+                <code class="pattern-code">class="icon success"</code>
+              </div>
+            </div>
+
+            <div class="pattern-item">
+              <div class="pattern-preview">
+                <svg class="icon danger icon--32" viewBox="0 0 24 24">
+                  <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="pattern-info">
+                <div class="pattern-title">Danger State</div>
+                <code class="pattern-code">class="icon danger"</code>
+              </div>
+            </div>
+
+            <div class="pattern-item">
+              <div class="pattern-preview">
+                <div class="btn small">
+                  <svg class="icon icon--16" viewBox="0 0 24 24">
+                    <path d="M12 2l3 6 7 1-5 4 2 7-7-4-7 4 2-7-5-4 7-1z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" fill="none"/>
+                  </svg>
+                  Button + Icon
+                </div>
+              </div>
+              <div class="pattern-info">
+                <div class="pattern-title">With Button</div>
+                <code class="pattern-code">icon inherits color</code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Style guide — Flat Design demo</p>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
