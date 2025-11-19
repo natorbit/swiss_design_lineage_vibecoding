@@ -9,16 +9,16 @@ This document summarizes what we've completed together while transforming the or
 ## What was built
 
 - Tokens & core stylesheet
-	- `public/css/flat.css` — full token set (colors, spacing, radii, icon stroke) and component rules (grid, cards, buttons, icons, spacing samples).
+	- `https://natorbit.github.io/swiss_design_lineage_vibecoding/public/css/flat.css` — full token set (colors, spacing, radii, icon stroke) and component rules (grid, cards, buttons, icons, spacing samples).
 - Demo & documentation
-	- `public/index.html` — demo front page (hero, full-bleed blocks, cards)
-	- `public/style-guide.html` — live style guide (tokens, spacing samples, grid demo, icon gallery)
-	- `public/reflection-flat-design.html` — AI partner reflection (the collaboration write-up with screenshots)
+	- `https://natorbit.github.io/swiss_design_lineage_vibecoding/public/index.html` — demo front page (hero, full-bleed blocks, cards)
+	- `https://natorbit.github.io/swiss_design_lineage_vibecoding/public/style-guide.html` — live style guide (tokens, spacing samples, grid demo, icon gallery)
+	- `https://natorbit.github.io/swiss_design_lineage_vibecoding/public/reflection-flat-design.html` — AI partner reflection (the collaboration write-up with screenshots)
 - Icons
-	- Inline SVG sprite added to `public/style-guide.html` (and `public/icons.svg` available)
+	- Inline SVG sprite added to `https://natorbit.github.io/swiss_design_lineage_vibecoding/public/style-guide.html` (and `https://natorbit.github.io/swiss_design_lineage_vibecoding/public/icons.svg` available)
 	- Icon sizes, gallery, and patterns implemented in the style guide
 - Interaction & accessibility
-	- `public/js/main.js` — demo behaviors (toasts, confirm, smooth scroll)
+	- `https://natorbit.github.io/swiss_design_lineage_vibecoding/public/js/main.js` — demo behaviors (toasts, confirm, smooth scroll)
 	- Buttons converted to semantic `<button>` where appropriate; ARIA labels added to nav and controls
 - Server and assets
 	- `index.js` — Express server updated to serve both `public/` and `docs/` (so notes/screenshots are accessible)
@@ -34,9 +34,9 @@ This document summarizes what we've completed together while transforming the or
 
 ## Files you may want to review
 
-- `public/css/flat.css` — tokens and component styles
-- `public/style-guide.html` — the main documentation page to review components and spacing
-- `public/reflection-flat-design.html` — the AI reflection (screenshots embedded)
+- `https://natorbit.github.io/swiss_design_lineage_vibecoding/public/css/flat.css` — tokens and component styles
+- `https://natorbit.github.io/swiss_design_lineage_vibecoding/public/style-guide.html` — the main documentation page to review components and spacing
+- `https://natorbit.github.io/swiss_design_lineage_vibecoding/public/reflection-flat-design.html` — the AI reflection (screenshots embedded)
 
 ## Links & references
 
