@@ -4,6 +4,8 @@ Style chosen: Flat Design
 
 Started 11/10/25
 
+[Live Link](https://natorbit.github.io/swiss_design_lineage_vibecoding/)
+
 This document summarizes what we've completed together while transforming the original Swiss-style repo into a Flat Design gallery and style guide. It lists the concrete artifacts added or updated, where to preview them, and quick notes about decisions and next steps.
 
 ## What was built

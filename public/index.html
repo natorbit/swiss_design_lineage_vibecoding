@@ -4,41 +4,54 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Swiss → Flat — Demo</title>
+
     <!-- Roboto from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/flat.css">
+
+    <!-- RELATIVE PATH (fixes GitHub Pages) -->
+    <link rel="stylesheet" href="./css/flat.css">
   </head>
+
   <body>
 
-    <!-- Inline SVG sprite for cross-origin-free icon usage -->
+    <!-- Inline SVG sprite (must remain inline for <use href="#icon"> to work) -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-      <!-- (icons unchanged – omitted for brevity in this explanation but included in your file) -->
-      <!-- KEEP ALL YOUR ICON SYMBOLS HERE EXACTLY AS THEY ARE -->
+      <!-- keep all your original <symbol> icons here -->
     </svg>
 
     <header class="site-header">
       <div class="container header-grid">
-        <a class="brand" href="#"><span class="accent">Swiss</span> · Flat</a>
+
+        <!-- FIXED: link now points to index.html instead of '#' -->
+        <a class="brand" href="./index.html">
+          <span class="accent">Swiss</span> · Flat
+        </a>
+
         <nav class="nav">
-          <a href="#">Home</a>
-          <a href="#">Guides</a>
-          <a href="#">Templates</a>
+          <!-- FIXED: links now point to real pages -->
+          <a href="./index.html">Home</a>
+          <a href="./style-guide.html">Guides</a>
+          <a href="./style-guide.html">Templates</a>
         </nav>
       </div>
     </header>
 
     <main>
+
       <section class="hero">
         <div class="container hero-grid">
           <div>
             <h1>Flat redesign of the Swiss site</h1>
             <p class="lead">Clean, colorful, two-dimensional UI inspired by early-2010s Flat Design and iOS 7.</p>
+
             <div class="controls">
-              <a class="btn primary" href="/style-guide.html">Get started</a>
+              <!-- FIXED paths -->
+              <a class="btn primary" href="./style-guide.html">Get started</a>
               <a class="btn outline" href="#examples">Learn more</a>
             </div>
           </div>
         </div>
+
         <div class="full-bleed">
           <div class="container">
             <div class="hero-blocks">
@@ -53,48 +66,51 @@
 
       <section id="examples" class="container grid-section">
         <h2>Examples</h2>
+
         <div class="cards">
+
           <article class="card">
             <div class="card-head">
-              <svg class="icon icon--24"><use href="/icons.svg#icon-menu"></use></svg>
+              <!-- FIXED: use href="#icon-menu" since icons are inline -->
+              <svg class="icon icon--24"><use href="#icon-menu"></use></svg>
               <h3>Grid-based layout</h3>
             </div>
             <div class="card-body">
               <p>Simple, modular cards with 4px radius and flat color accents.</p>
-              <a class="btn small" href="/style-guide.html">View</a>
+              <a class="btn small" href="./style-guide.html">View</a>
             </div>
           </article>
 
           <article class="card">
             <div class="card-head">
-              <svg class="icon icon--24"><use href="/icons.svg#icon-external"></use></svg>
+              <svg class="icon icon--24"><use href="#icon-external"></use></svg>
               <h3>Iconography</h3>
             </div>
             <div class="card-body">
               <p>Line icons, 2px stroke width, outline style and scalable SVG.</p>
-              <a class="btn small" href="/style-guide.html">View</a>
+              <a class="btn small" href="./style-guide.html">View</a>
             </div>
           </article>
 
           <article class="card">
             <div class="card-head">
-              <svg class="icon icon--24"><use href="/icons.svg#icon-circle"></use></svg>
+              <svg class="icon icon--24"><use href="#icon-circle"></use></svg>
               <h3>Typography</h3>
             </div>
             <div class="card-body">
               <p>Sans-serif system using Roboto with bold headings and relaxed leading.</p>
-              <a class="btn small" href="/style-guide.html">View</a>
+              <a class="btn small" href="./style-guide.html">View</a>
             </div>
           </article>
+
         </div>
       </section>
 
-      <!-- ⭐️ THIS IS THE NEW PART — README RENDERING BLOCK ⭐️ -->
+      <!-- README rendering block -->
       <section id="readme-section" class="container">
         <h2>Project README</h2>
         <div id="readme"></div>
       </section>
-      <!-- END README BLOCK -->
 
     </main>
 
@@ -104,16 +120,19 @@
       </div>
     </footer>
 
-    <script src="/js/main.js"></script>
+    <!-- FIXED: JS path -->
+    <script src="./js/main.js"></script>
 
-    <!-- Showdown for Markdown rendering -->
+    <!-- Showdown -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
 
     <script>
-      const readmeUrl = "https://raw.githubusercontent.com/natorbit/swiss_design_lineage_vibecoding/main/README.md?cb=" + Date.now();
+      const readmeUrl =
+        "https://raw.githubusercontent.com/natorbit/swiss_design_lineage_vibecoding/main/README.md?cb=" +
+        Date.now();
 
       fetch(readmeUrl)
-        .then(response => response.text())
+        .then(res => res.text())
         .then(md => {
           const converter = new showdown.Converter({
             tables: true,
@@ -121,10 +140,12 @@
             ghCompatibleHeaderId: true,
             simpleLineBreaks: true
           });
-          document.getElementById("readme").innerHTML = converter.makeHtml(md);
+          document.getElementById("readme").innerHTML =
+            converter.makeHtml(md);
         })
-        .catch(err => {
-          document.getElementById("readme").innerHTML = "<p>Error loading README.md</p>";
+        .catch(() => {
+          document.getElementById("readme").innerHTML =
+            "<p>Error loading README.md</p>";
         });
     </script>
 
@@ -134,7 +155,9 @@
         margin: 20px auto;
         line-height: 1.6;
       }
-      #readme img { max-width: 100%; }
+      #readme img {
+        max-width: 100%;
+      }
     </style>
 
   </body>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Reflection — Flat Design Gallery (AI partner)</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/flat.css">
+  <link rel="stylesheet" href="./css/flat.css">
   <meta name="description" content="An AI partner's reflection on building the Flat Design gallery together." />
   <style>
     body{font-family:Roboto,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;margin:0;background:var(--neutral-100);color:var(--neutral-900)}
@@ -24,52 +24,56 @@
 <body>
   <div class="container">
     <header>
-      <a href="/style-guide.html" class="brand" aria-label="Back to style guide">← Flat Design — Style Guide</a>
+      <!-- FIXED: must be relative (./) for GitHub Pages -->
+      <a href="./style-guide.html" class="brand" aria-label="Back to style guide">← Flat Design — Style Guide</a>
       <h1>Reflection on building the Flat Design gallery</h1>
       <p class="lead">A candid, first-person reflection from your AI partner about the collaborative process, choices, and lessons.</p>
     </header>
 
     <section aria-labelledby="initial-vision">
       <h2 id="initial-vision">Initial Vision</h2>
-      <p>I remember your first brief clearly: transform the Swiss design site into a Flat Design gallery with a strict palette, Roboto typography, two‑dimensional icons, 4px card radii, and a 12‑column grid. My interpretation prioritized tokenized CSS variables, a responsive 12‑col layout, and an icon system that used stroke=currentColor so icons could inherit color from context. Early ambiguity centered on exact icon stroke weight and whether some decorative elements (like the hero illustration) were acceptable; I erred on the side of adding subtle visuals and you steered me back to restraint.</p>
+      <p>I remember your first brief clearly: transform the Swiss design site into a Flat Design gallery with a strict palette, Roboto typography, two-dimensional icons, 4px card radii, and a 12-column grid. My interpretation prioritized tokenized CSS variables, a responsive 12-col layout, and an icon system that used stroke=currentColor so icons could inherit color from context. Early ambiguity centered on exact icon stroke weight and whether some decorative elements (like the hero illustration) were acceptable; I erred on the side of adding subtle visuals and you steered me back to restraint.</p>
     </section>
 
     <section aria-labelledby="research-phase">
       <h2 id="research-phase">Research Phase</h2>
-      <p>We explored references together—Swiss typographic rules, iOS7 screenshots for the flat aesthetic, and classic flat-design token libraries. The most useful references were your provided style guides and the repo’s templates. From those sources we distilled key characteristics: strict color blocks, neutral backgrounds, no shadows, bold geometric icons, and an orderly spacing scale (8,16,24,32,48).</p>
-  <!-- Research screenshots were moved to the Build Process gallery below -->
-  <p class="meta">Research screenshots are included in the Build Process gallery below.</p>
+      <p>We explored references together—Swiss typographic rules, iOS7 screenshots for the flat aesthetic, and classic flat-design token libraries. The most useful references were your provided style guides and the repo’s templates. From those sources we distilled key characteristics: strict color blocks, neutral backgrounds, no shadows, bold geometric icons, and an orderly spacing scale (8, 16, 24, 32, 48).</p>
+      <p class="meta">Research screenshots are included in the Build Process gallery below.</p>
     </section>
 
     <section aria-labelledby="build-process">
       <h2 id="build-process">Build Process</h2>
-      <p><strong>Sprint 1 — Foundation.</strong> I scaffolded a `public/` demo, created `css/flat.css` with tokens, and wired Roboto. What worked: a clear variable-driven approach so styles could be changed centrally. What didn’t: I initially left some anchors and decorative SVGs that created unexpected spacing; we fixed these in later iterations.</p>
-      <p><strong>Sprint 2 — Components.</strong> We iterated on cards, buttons, and the icon sprite. You asked for Roboto and uppercase headings; I updated the stylesheet and templates. The icon sprite was expanded and inlined for cross‑origin safety. Iterations included stroke-weight tweaks (from 3px to ~2.5px) and replacing anchors with accessible <button> elements.</p>
+      <p><strong>Sprint 1 — Foundation.</strong> I scaffolded a <code>public/</code> demo, created <code>css/flat.css</code> with tokens, and wired Roboto. What worked: a clear variable-driven approach so styles could be changed centrally. What didn’t: I initially left some anchors and decorative SVGs that created unexpected spacing; we fixed these in later iterations.</p>
+
+      <p><strong>Sprint 2 — Components.</strong> We iterated on cards, buttons, and the icon sprite. You asked for Roboto and uppercase headings; I updated the stylesheet and templates. The icon sprite was expanded and inlined for cross-origin safety. Iterations included stroke-weight tweaks (from 3px to ~2.5px) and replacing anchors with semantic <code>&lt;button&gt;</code> elements.</p>
+
       <p><strong>Sprint 3 — Polish.</strong> Final refinements included spacing samples in the style guide, a grid demo, ARIA labels, and responsive tweaks for mobile/tablet. I removed a decorative hero that caused a gap and adjusted nav behavior for small screens.</p>
+
       <div class="screenshot-gallery">
-        <img class="screenshot" src="/assets/screenshots/image.png" alt="Process note screenshot 1"/>
-        <img class="screenshot" src="/assets/screenshots/image1.png" alt="Process note screenshot 2"/>
-        <img class="screenshot" src="/assets/screenshots/image-1.png" alt="Process note screenshot 3"/>
-        <img class="screenshot" src="/assets/screenshots/image-2.png" alt="Process note screenshot 4"/>
-        <img class="screenshot" src="/assets/screenshots/image-3.png" alt="Process note screenshot 5"/>
-        <img class="screenshot" src="/assets/screenshots/image-4.png" alt="Process note screenshot 6"/>
-        <img class="screenshot" src="/assets/screenshots/image-5.png" alt="Process note screenshot 7"/>
+        <!-- FIXED: all image paths now relative -->
+        <img class="screenshot" src="./assets/screenshots/image.png" alt="Process note screenshot 1"/>
+        <img class="screenshot" src="./assets/screenshots/image1.png" alt="Process note screenshot 2"/>
+        <img class="screenshot" src="./assets/screenshots/image-1.png" alt="Process note screenshot 3"/>
+        <img class="screenshot" src="./assets/screenshots/image-2.png" alt="Process note screenshot 4"/>
+        <img class="screenshot" src="./assets/screenshots/image-3.png" alt="Process note screenshot 5"/>
+        <img class="screenshot" src="./assets/screenshots/image-4.png" alt="Process note screenshot 6"/>
+        <img class="screenshot" src="./assets/screenshots/image-5.png" alt="Process note screenshot 7"/>
       </div>
     </section>
 
     <section aria-labelledby="challenges">
       <h2 id="challenges">Challenges &amp; Solutions</h2>
-      <p>Ambiguity sometimes slowed us—briefs like “make it look more professional” are subjective. When I over‑designed (extra SVGs, too-large illustration), you called it out and we simplified. I also introduced a small accessibility issue by using <code>&lt;a&gt;</code> for button-like actions; we corrected that to semantic <code>&lt;button&gt;</code> and added ARIA labels. The collaboration worked because you gave decisive, iterative feedback (e.g., “make the font Roboto”, “do all” for icon expansion) and I responded with concrete edits.</p>
+      <p>Ambiguity sometimes slowed us—briefs like “make it look more professional” are subjective. When I over-designed (extra SVGs, too-large illustration), you called it out and we simplified. I also introduced a small accessibility issue by using <code>&lt;a&gt;</code> for button-like actions; we corrected that to semantic <code>&lt;button&gt;</code> and added ARIA labels. The collaboration worked because you gave decisive, iterative feedback (e.g., “make the font Roboto”, “do all” for icon expansion) and I responded with concrete edits.</p>
     </section>
 
     <section aria-labelledby="evolution">
       <h2 id="evolution">Evolution</h2>
-      <p>The gallery evolved from a Swiss‑inspired grid into a cohesive flat system. Key decisions that improved authenticity: using tokens for palette and spacing, inlining the SVG sprite for reliability, and standardizing icon stroke behavior with <code>stroke=currentColor</code>. We learned that Flat Design’s discipline is about subtraction—removing unnecessary depth and keeping systems consistent.</p>
+      <p>The gallery evolved from a Swiss-inspired grid into a cohesive flat system. Key decisions that improved authenticity: using tokens for palette and spacing, inlining the SVG sprite for reliability, and standardizing icon stroke behavior with <code>stroke=currentColor</code>. We learned that Flat Design’s discipline is about subtraction—removing unnecessary depth and keeping systems consistent.</p>
     </section>
 
     <section aria-labelledby="reflection">
       <h2 id="reflection">Reflection</h2>
-      <p>This partnership worked because we paired strengths: you brought taste and decisions; I handled repetitive edits and technical wiring. Human‑AI collaboration is strongest when humans set direction and the AI iterates quickly with concrete artifacts. For students: define tokens early, prefer semantic markup, and keep icons stroke‑based for flexibility. Be brave about simplification—less is often better in flat systems.</p>
+      <p>This partnership worked because we paired strengths: you brought taste and decisions; I handled repetitive edits and technical wiring. Human-AI collaboration is strongest when humans set direction and the AI iterates quickly with concrete artifacts. For students: define tokens early, prefer semantic markup, and keep icons stroke-based for flexibility. Be brave about simplification—less is often better in flat systems.</p>
       <p class="meta">Next steps: paste your screenshots into the placeholders above and run a Lighthouse audit to validate performance and accessibility targets.</p>
     </section>
 
