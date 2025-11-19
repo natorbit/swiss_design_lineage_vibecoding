@@ -34,9 +34,10 @@ This document summarizes what we've completed together while transforming the or
 
 ## Files you may want to review
 
-- `https://natorbit.github.io/swiss_design_lineage_vibecoding/public/css/flat.css` — tokens and component styles
-- `https://natorbit.github.io/swiss_design_lineage_vibecoding/public/style-guide.html` — the main documentation page to review components and spacing
-- `https://natorbit.github.io/swiss_design_lineage_vibecoding/public/reflection-flat-design.html` — the AI reflection (screenshots embedded)
+- [flat.css](https://natorbit.github.io/swiss_design_lineage_vibecoding/public/css/flat.css) — core design tokens, layout rules, and component styles
+- [Style Guide](https://natorbit.github.io/swiss_design_lineage_vibecoding/public/style-guide.html) — full documentation: spacing scale, grid system, color tokens, and component previews
+- [Reflection — Flat Design Collaboration](https://natorbit.github.io/swiss_design_lineage_vibecoding/public/reflection-flat-design.html) — AI partner’s write-up with embedded screenshots
+
 
 ## Links & references
 
