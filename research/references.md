@@ -1,12 +1,12 @@
-https://www.pictoninvestments.com/en
-https://www.limeiq.com/
-https://www.altlawfirm.com/
-https://www.dentalux.net/
-https://www.poirier.com/en/
-https://www.everyusb.com/
-https://www.wand.am/
-https://proudsmile.com.au/
-https://www.figureandplot.com/
-https://www.rtfct.com/
-https://www.ekodeck.com.au/
-https://homerun.today/
+[PICTON Investments](https://www.pictoninvestments.com/en)
+[LimeIQ](https://www.limeiq.com/)
+[Altamirano PLLC](https://www.altlawfirm.com/)
+[Dentalux](https://www.dentalux.net/)
+[Poirier](https://www.poirier.com/en/)
+[EveryUSB](https://www.everyusb.com/)
+[WAND](https://www.wand.am/)
+[Proud Smile Dental](https://proudsmile.com.au/)
+[Figure & Plot](https://www.figureandplot.com/)
+[RTFCT](https://www.rtfct.com/)
+[Ekodeck](https://www.ekodeck.com.au/)
+[Home Run Today](https://homerun.today/)

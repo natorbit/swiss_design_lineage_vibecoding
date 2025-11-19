@@ -43,6 +43,9 @@ This document summarizes what we've completed together while transforming the or
 
 ## Links & references
 
+- [History](references/swiss-style-history.md)
+- [Other Website Examples](research/references.md)
+
 
 ## How to preview locally
 
