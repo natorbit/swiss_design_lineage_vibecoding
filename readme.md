@@ -1,109 +1,86 @@
-# Swiss Design Lineage Vibe Coding
-## Build Professional Design in One Week Using AI
+# My Process — Flat Design Gallery
 
-Build a design gallery website using pure AI collaboration. You guide, AI codes.
+Style chosen: Flat Design
 
-**⏱️ Time:** ~10 hours  |  **💻 Code you write:** Zero  |  **🎨 What you learn:** Design taste + AI collaboration
+Started 11/10/25
+
+This document summarizes what we've completed together while transforming the original Swiss-style repo into a Flat Design gallery and style guide. It lists the concrete artifacts added or updated, where to preview them, and quick notes about decisions and next steps.
+
+## What was built
+
+- Tokens & core stylesheet
+	- `public/css/flat.css` — full token set (colors, spacing, radii, icon stroke) and component rules (grid, cards, buttons, icons, spacing samples).
+- Demo & documentation
+	- `public/index.html` — demo front page (hero, full-bleed blocks, cards)
+	- `public/style-guide.html` — live style guide (tokens, spacing samples, grid demo, icon gallery)
+	- `public/reflection-flat-design.html` — AI partner reflection (the collaboration write-up with screenshots)
+- Icons
+	- Inline SVG sprite added to `public/style-guide.html` (and `public/icons.svg` available)
+	- Icon sizes, gallery, and patterns implemented in the style guide
+- Interaction & accessibility
+	- `public/js/main.js` — demo behaviors (toasts, confirm, smooth scroll)
+	- Buttons converted to semantic `<button>` where appropriate; ARIA labels added to nav and controls
+- Server and assets
+	- `index.js` — Express server updated to serve both `public/` and `docs/` (so notes/screenshots are accessible)
+	- PNG screenshots copied to `public/assets/screenshots/` for the reflection page
+
+## Key design decisions
+
+- Roboto is the site font across all pages (Google Fonts). Headings use strong weight and small letter spacing to echo Swiss heritage while keeping a flat, modern look.
+- 12-column responsive grid implemented via utility `.row`/`.col-*` classes.
+- Spacing scale: 8 / 16 / 24 / 32 / 48 (CSS variables `--space-1`…`--space-5`).
+- Icons are stroke-based (`stroke=currentColor`) and controlled by `--icon-stroke` for consistent visual weight.
+- No shadows or gradients — flat, two-dimensional aesthetic inspired by iOS7.
+
+## Files you may want to review
+
+- `public/css/flat.css` — tokens and component styles
+- `public/style-guide.html` — the main documentation page to review components and spacing
+- `public/reflection-flat-design.html` — the AI reflection (screenshots embedded)
+
+## Links & references
 
 
-## Demo (Flat design)
+## How to preview locally
 
-A small demo front-end has been added under `public/` to show the Flat Design refresh.
-
-- Start the server:
+1. Start the server from the project root:
 
 ```bash
-npm install
-npm start
+node index.js
 ```
 
-- Open http://localhost:3000 in your browser to view the demo.
+2. Open these pages in your browser:
 
-The demo uses the Flat UI color palette, Roboto, 4px radius cards, no shadows, and 2px stroke outline icons.
 
----
+## Style chosen
 
-**Ready?** → **[docs/START-HERE.md](docs/START-HERE.md)**
+- Flat Design — a two-dimensional, minimalist approach inspired by iOS7 and Swiss typography. This project's specific constraints: Roboto typography, no shadows/gradients, clear color tokens, 4px card radius, and 2px-ish icon strokes.
 
-````
-**New to this project?** Click above. Everything you need is there.
+## Time spent (approx.)
 
----
+- Total time spent on the implementation, edits and polish: ~3–5 hours. This includes creating the stylesheet, building the demo pages, iterating on icons, wiring interactions, and validating layout and accessibility locally.
 
-## What This Project Is
+## Key decisions made
 
-Transform a Swiss-style website into any of 15 design styles:
-- Neo-Brutalism, Flat Design, Material Design
-- Nordic Minimalism, Humanist Modernism
-- Swiss Punk, Corporate Modernism
-- And 8 more authentic design systems
+- Use CSS custom properties (tokens) for colors, spacing, radii and icon stroke so the system is easy to tweak.
+- Adopt Roboto as the single site font and enforce uppercase section headings for a Swiss-leaning typographic voice.
+- Implement a responsive 12-column grid with `.row` and `.col-*` helpers for predictable layout across breakpoints.
+- Make icons stroke-based (`stroke=currentColor`) and control visual weight with `--icon-stroke`.
+- Avoid shadows/gradients: keep surfaces flat and consistent; use full-bleed color blocks and clearly separated cards.
+- Provide an inline SVG sprite and a copyable, public `icons.svg` for robust icon usage.
+- Improve accessibility: replace anchor pseudo-buttons with semantic `<button>`s, add ARIA labels, and ensure focusable elements are keyboard-friendly.
 
-**You direct.** AI codes. You review and iterate until excellent.
+## Challenges overcome
 
----
+- Ambiguous or subjective feedback ("make it look more professional") required iterative, concrete changes — we converged by specifying tokens and concrete measurements.
+- An initially added decorative SVG created a layout gap; fixing it required removing/repositioning the graphic and adjusting margins.
+- Icon stroke weight balance: we tuned `--icon-stroke` from 3px down to ~2.5px for better visual parity across sizes.
+- Cross-origin/serving issues for screenshots: I updated `index.js` to serve `docs/` and also copied screenshots into `public/assets/screenshots/` so the reflection gallery loads without extra steps.
+- Accessibility fixes: converted `<a>` used as buttons into `<button>`, added ARIA labels, and improved keyboard focus behavior.
 
-## Quick Links
 
-**Getting Started:**
-- **[START HERE](docs/START-HERE.md)** — Single entry point with decision tree
-- [Daily Checklist](templates/daily-checklist.md) — Day-by-day tasks
-- [Browse Style Guides](style-guides/) — 15 comprehensive guides (300+ pages)
+## Notes & next steps
 
-**While Working:**
-- [Workflow Guide](docs/WORKFLOW.md) — 5 phases explained
-- [AI Playbook](docs/AI-PLAYBOOK.md) — Work effectively with AI
-- [Troubleshooting](docs/TROUBLESHOOTING.md) — Common issues & fixes
-- [Quality Review](templates/quality-review.md) — Check before submitting
-
-**Finishing Up:**
-- [Grading Rubric](docs/GRADING.md) — How you'll be evaluated (100 pts)
-- [Collaboration Story Template](templates/collaboration-story.md) — AI reflection guide
-
----
-
-## Key Features
-
-✅ **Zero code required** — Pure AI collaboration  
-✅ **~10 hours total** — Realistic with AI assistance  
-✅ **15 style options** — Beginner to advanced  
-✅ **300+ pages of guides** — Comprehensive design documentation  
-✅ **Professional results** — Portfolio-worthy websites  
-✅ **Strategic learning** — Design judgment + AI collaboration skills
-
----
-
-## Project Structure
-
-```
-/docs/               Core learning documents
-/templates/          Reusable checklists
-/style-guides/       15 comprehensive design guides
-  /beginner/         2 accessible styles
-  /intermediate/     6 medium complexity styles
-  /advanced/         7 complex design systems
-/references/         Assignment information
-```
-
----
-
-## For Instructors
-
-**Repository:** [github.com/kaw393939/swiss_design_lineage_vibecoding](https://github.com/kaw393939/swiss_design_lineage_vibecoding)
-
-**Contact:** Keith Williams  
-**Course:** IS 218 - Building Web Applications  
-**Version:** 3.0 — November 2025
-
----
-
-## Quick Start (3 Steps)
-
-1. **Read:** [docs/START-HERE.md](docs/START-HERE.md)
-2. **Pick:** Choose your style (beginner/intermediate/advanced)
-3. **Build:** Follow [daily checklist](templates/daily-checklist.md)
-
-**Then stop reading and start building.** 🎨✨
-
----
-
-**Ready?** → **[docs/START-HERE.md](docs/START-HERE.md)**
+- Accessibility: ARIA labels and semantic HTML were added, but running Lighthouse locally is recommended to validate scores and catch edge cases.
+- If you want PNGs embedded as base64 or to remove the temporary SVG wrappers, say which option you prefer and I can apply it.
+- Want thumbnails or compressed images for faster loads? I can add optimized variants and update the gallery to use them.
